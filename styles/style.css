@@ -1,5 +1,29 @@
 /* место для вашего кода */
+.header{
+  display: flex;
+  margin: auto;
+  height: 1340px;
+  
+}
+.menu{
+  display: flex;
+  gap: 35px;
+  font-family: Raleway;
+  margin-right: auto;
+}
 
+.menu-link{
+  /* position: relative; */
+  margin-right: auto;
+}
+.kartinka{
+  width: 150px;
+  margin: 20px 0;
+  font-weight: 800;
+  font-size: 38px;
+}
 
-
-
+.adress{
+  font-family: Raleway;
+  gap:10px;
+}

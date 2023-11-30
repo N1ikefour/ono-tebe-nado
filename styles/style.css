@@ -2,28 +2,67 @@
 .header{
   display: flex;
   margin: auto;
-  height: 1340px;
-  
+  width:1340px;
+  height: 109px;
+  padding: 92px 49px 92px 51px;
 }
-.menu{
+.header__menu{
   display: flex;
   gap: 35px;
   font-family: Raleway;
-  margin-right: auto;
+  
+  justify-content: flex-start;
+  color: #000;
+ font-size: 18px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ display: inline;
+}
+.header__link{
+  display: flex;
+  color: #000;
+ font-family: Raleway;
+ font-size: 18px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+
 }
 
-.menu-link{
-  /* position: relative; */
-  margin-right: auto;
+.header__links-list{
+display: inline-block;
+}
+
+.header__link_active .header__link{
+  text-decoration: none;
 }
 .kartinka{
-  width: 150px;
-  margin: 20px 0;
-  font-weight: 800;
-  font-size: 38px;
+  margin: auto;
+  width: 148px;
+  height: 105px;
+  flex-shrink: 0;
+  padding-right: 120px;
+
+
 }
 
 .adress{
-  font-family: Raleway;
-  gap:10px;
+  width: 240px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #000;
+  /* gap: 10px; */
+ font-family: Raleway;
+ font-size: 18px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 24.3px
+}
+
+.cover{
+ width: 1440px;
+ height: 757px;
+ flex-shrink: 0;
+ background-image: url(/ono-tebe-nado/images/cover.jpg);
 }

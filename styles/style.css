@@ -17,7 +17,6 @@
  font-style: normal;
  font-weight: 400;
  line-height: normal;
- display: inline;
 }
 .header__link{
   display: flex;
@@ -31,7 +30,8 @@
 }
 
 .header__links-list{
-display: inline-block;
+display: flex;
+gap: 35px;
 }
 
 .header__link_active .header__link{
@@ -59,6 +59,7 @@ display: inline-block;
  font-weight: 400;
  line-height: 24.3px
 }
+
 
 .cover{
  width: 1440px;

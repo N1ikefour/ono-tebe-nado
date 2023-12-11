@@ -1,12 +1,12 @@
 /* место для вашего кода */
-.header{
+.header {
   display: flex;
   margin: auto;
   width:1340px;
   height: 109px;
-  padding: 92px 49px 92px 51px;
+  padding: 92px 49px 92px 50px;
 }
-.header__menu{
+.header__menu {
   display: flex;
   gap: 35px;
   font-family: Raleway;
@@ -18,7 +18,7 @@
  font-weight: 400;
  line-height: normal;
 }
-.header__link{
+.header__link {
   display: flex;
   color: #000;
  font-family: Raleway;
@@ -29,15 +29,18 @@
 
 }
 
-.header__links-list{
+.header__links-list {
 display: flex;
 gap: 35px;
+margin-left: 0;
+list-style-type: circle;
 }
 
-.header__link_active .header__link{
+.header__link_active .header__link {
   text-decoration: none;
+  list-style-type: none;
 }
-.kartinka{
+.kartinka {
   margin: auto;
   width: 148px;
   height: 105px;
@@ -47,7 +50,7 @@ gap: 35px;
 
 }
 
-.adress{
+.adress {
   width: 240px;
   height: 24px;
   flex-shrink: 0;
@@ -61,23 +64,15 @@ gap: 35px;
 }
 
 
-/* .cover{
- width: 1440px;
- height: 757px;
- display: flex;
- align-items: center;
- height: 100%;
- margin: 50px;
- padding: 25px;
-} */
-
 .cover {
   position: relative;
   z-index: 0;
   min-height: 757px;
   width: 1440px;
   height: 757px;
-  padding: 165px 50px 50px 50px;
+  padding: 0px 120px 169px 0px;
+  margin: auto;
+  
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -90,6 +85,7 @@ gap: 35px;
   position: absolute;
   background: rgba(0, 0, 0, .6);
   z-index: 1;
+  
   
 }
 
@@ -151,13 +147,14 @@ gap: 35px;
   display: grid;
   justify-items: end;
   word-spacing: 17px;
-  color: #FFF;
+  color: #FFFF;
   text-align: center;
   font-family: Raleway;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 .button-text {
@@ -177,11 +174,13 @@ gap: 35px;
   border: 2px solid #FFF;
   position: relative;
   z-index: 3;
+  cursor: pointer;
 }
 
 .lots {
   background-color: #FFF;
   padding: 170px 50px 181px;
+  margin: auto;
   max-width: 1440px;
 }
 
@@ -289,6 +288,7 @@ gap: 35px;
   padding: 0px 58px;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  margin: auto;
 }
 
 .about__column-logo {
@@ -349,6 +349,7 @@ gap: 35px;
   justify-content: space-between;
   width: 1440px;
   padding: 180px 50px 90px;
+  margin: auto;
 }
 
 .footer__address {

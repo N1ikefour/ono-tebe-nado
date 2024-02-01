@@ -5,7 +5,6 @@
   font-weight: 400;
   letter-spacing: 0.18px;
   color: #000;
-  height: 105px;
   margin: 92px 24px 96px 24px;
   display: flex;
   /* background-color: aqua; */
@@ -15,6 +14,7 @@
 
 .header__menu {
   flex-shrink: 0;
+  padding-left: 26.5px;
 }
 
 .header__links-list {
@@ -34,32 +34,29 @@
 
 .header__link_active {
   text-decoration: none;
-  padding-left: 26.5px;
 }
 
 .header__logo {
-  margin-left: -22px;
-  padding-right: 184px;
+  margin-left: -15px;
+  padding-right: 192px
 }
 
 .header__address {
   display: flex;
   flex-direction: column;
   position: relative;
-  right: 63px;
-  gap: 1px;
+  right: 60px;
+  
 }
 
 .cover {
   background-image: url(/images/cover.jpg);
-  background-size: 1100px 757px;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 1100px;
-  height: 757px;
-  /* flex-shrink: 0; */
-  z-index: -1;
+  height: 100%;
+  z-index: 1;
   position: relative;
-  /* display: flex; */
 }
 
 .overlay {
@@ -83,91 +80,47 @@
   font-weight: 700;
   line-height: 115%;
   text-transform: uppercase;
-  gap: 20px;
+  gap: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: -9px;
 }
 
 .aligned-text {
-  justify-content: center;
+  justify-content: flex-start;
+  display: flex;
   text-align: center;
   letter-spacing: 30px;
   margin-top: 165px;
-  margin-left: 50px;
   width: 316px;
-  height: 115px;
+  align-self: flex-start;
+  /* height: 115px; */
 }
 
 .letter-spacing-extended {
   letter-spacing: 60px;
 }
 
-.aligned-textt {
+.aligned-text_centr_row {
+  display: flex;
   justify-items: center;
   letter-spacing: 30px;
+  justify-content: space-around;
   width: 369px;
-  height: 100px;
-  margin-left: 336px;
-  margin-top: 300;
+  align-self: center;
 }
 
-.aligned-texttt {
+.aligned-text_bottom_row {
   justify-items: center;
   letter-spacing: 60px;
   width: 417px;
   height: 100px;
-  margin-left: 633px;
+  align-self: flex-end;
 }
 
-.letter-spacing-extended_two {
+.letter-spacing-extended_H {
   letter-spacing: 30px;
 }
-
-/* .cover__title {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  color: white;
-  position: absolute;
-  z-index: 3;
-  font-family: Raleway;
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 115%;
-  width: 1000px;
-  height: 355px;
-  flex-shrink: 0;
-  margin: 165px 50px 237px 50px;
-  text-transform: uppercase;
-  justify-items: center;
-  gap: 20px;
-  grid-template-areas:
- "ono . ."
- "tebe tebe tebe"
- ". . nado"; 
-}
-
-.aligned-text {
-  grid-area: ono;
-  letter-spacing: 30px;
-}
-
-.aligned-textt {
-  grid-area: tebe;
-  letter-spacing: 30px;
-}
-
-.aligned-texttt {
-  grid-area: nado;
-  letter-spacing: 60px;
-}
-
-.letter-spacing-extended {
-  letter-spacing: 60px;
-}
-
-.letter-spacing-extended_two {
-  letter-spacing: 60px;
-} */
 
 .cover__description {
   display: flex;
@@ -177,35 +130,32 @@
   font-style: normal;
   font-weight: 400;
   font-weight: normal;
-  line-height: 28px; /* 127.273% */
+  line-height: 28px; 
   text-transform: uppercase;
-  position: absolute;
   z-index: 3;
   margin-top: 147px;
-  margin-left: 78px;
+  margin-left: 75px;
   gap: 79px;
 }
 
 .cover__description-text {
-  /* letter-spacing: 3px; */
   width: 640px;
-  height: 28px;
   text-transform: uppercase;
   font-weight: 400;
   word-spacing: 19px;
+  z-index: 3;
 }
 
 .bet-button {
   background-color: transparent;
   width: 256px;
-  height: 51px;
   flex-shrink: 0;
   padding: 12px 32px 11px 31px;
   margin-right: 50px;
   margin-bottom: 51px;
   color: #fff;
   text-align: center;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
@@ -214,11 +164,12 @@
   border: 1px solid #fff;
   position: relative;
   top: -13px;
+  z-index: 3;
+
 }
 .lots {
   width: 1052px;
-  height: 692px;
-  margin: 179px 24px 146px 24px;
+  margin: 152px 24px 158px 24px;
 }
 
 .lots__heading {
@@ -229,7 +180,7 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  padding-bottom: 27px;
+  padding-top: 19px;
   padding-left: 40px;
   /* margin: 179px 915px 27px 64px */
 }
@@ -238,14 +189,13 @@
   display: flex;
   gap: 25px;
   width: 334px;
-  height: 563px;
   flex-shrink: 0;
   color: #fff;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  flex-wrap: wrap;
-  flex-direction: column;
+  padding-top: 26px;
+  padding-bottom: 30px;
 }
 
 .lots__card-list-item {
@@ -268,25 +218,28 @@
 }
 
 .card.card_type_film {
-  background: url(/images/card-lot-01.jpg),
-    lightgray -597.988px 0px / 457.481% 100% no-repeat;
+  background: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
   width: 334px;
-  height: 563px;
   background-position: center;
   background-size: cover;
 }
 
 .card.card_type_book {
-  background: url(/images/card-lot-02.jpg),
-    lightgray -102px -119.083px / 161.078% 142.303% no-repeat;
+  background: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .card.card_type_picture {
-  background: url(/images/card-lot-03.jpg), lightgray 50% / cover no-repeat;
+  background: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card__title {
@@ -325,7 +278,6 @@
 .lots__look-more-link {
   padding-left: 40px;
   padding-top: 30px;
-  position: absolute;
   color: #000;
   font-family: Raleway, sans-serif;
   font-size: 20px;
@@ -336,21 +288,21 @@
 }
 
 .about {
+  font-family: Raleway, sans-serif;
   width: 1052px;
   margin: 179px 24px 146px 24px;
-  position: absolute;
   /* padding: 148px 58px; */
   display: grid;
   /* grid-template-columns: 1fr 2fr; */
   grid-template-columns: 334px 663px;
-  gap: 52px;
+  gap: 26px;
   margin: auto;
-  padding-top: 33px;
+  padding-top: 23px;
 }
 
 .about__column-logo {
   height: 334px;
-  padding: 0px 85px;
+  padding: 0px 46px;
   width: 100%;
 }
 
@@ -393,10 +345,10 @@
   font-family: Raleway, sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   padding-bottom: 25px;
-  text-align: initial;
+  text-align: left;
 }
 
 .about__text-indent {
@@ -409,9 +361,8 @@
   width: 1000px;
   padding-left: 10px;
   margin-top: auto;
-  height: 98px;
   margin-left: 57px;
-  margin-top: 918px;
+  margin-top: 154px;
   margin-bottom: 88px;
 }
 
@@ -422,6 +373,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24.3px;
+  position: relative;
+  left: -12px;
 }
 
 .footer__menu {
@@ -430,6 +383,12 @@
   justify-content: center;
   text-align: center;
 }
+
+.footer__menu-list {
+  position: relative;
+  left: 10px;
+}
+
 .footer__menu-list-item {
   list-style-type: none;
   color: #000;

@@ -115,7 +115,7 @@
   align-self: flex-end;
 }
 
-.letter-spacing-extended_letter_H {
+.no-letter-spacing {
   letter-spacing: 30px;
 }
 
@@ -130,7 +130,7 @@
   line-height: 28px; 
   text-transform: uppercase;
   z-index: 3;
-  margin-top: 132px;
+  margin-top: 119px;
   margin-left: 75px;
   gap: 79px;
 }
@@ -141,13 +141,14 @@
   font-weight: 400;
   word-spacing: 19px;
   z-index: 3;
+  margin-top: 11px;
 }
 
 .bet-button {
   background-color: transparent;
   width: 256px;
   flex-shrink: 0;
-  padding: 0 32px 11px 31px;
+  padding: 12px 32px 11px 31px;
   margin-right: 50px;
   margin-bottom: 51px;
   color: #fff;
@@ -346,10 +347,11 @@
   font-weight: 500;
   line-height: normal;
   text-align: left;
+  padding-bottom: 25px;
 }
 
-.about__text.first_paragraph {
-  padding-bottom: 25px;
+.about__text:last-child {
+  padding-bottom: 0;
 }
 
 .about__text-indent {
